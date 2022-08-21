@@ -15,3 +15,6 @@ Directions:
 5. In order to run a test, use the following command:
    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chipmunk/01.jpg chipmunk.jp   
 7. 
+
+
+How it was made:
