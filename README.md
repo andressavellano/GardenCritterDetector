@@ -8,4 +8,10 @@ This program is useful for the protection of crops and other small plants. This 
 
 Directions:
 
-1.
+1. Download the classification file. This file contains the data used to train the model as well as the trained model which can detect chipmunks and strawberry plants.
+2. Navigate to jetson-inference/python/training.
+3. Remove the default classification file.
+4. Replace the classification file with the one downloaded from this github page.
+5. In order to run a test, use the following command:
+   imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/chipmunk/01.jpg chipmunk.jp   
+7. 
